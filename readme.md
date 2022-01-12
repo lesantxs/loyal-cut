@@ -1,6 +1,6 @@
-<img algin="center" src="./src/imagem/Group 12.svg" alt="Logo - LoyalCut">
+<img align="center" src="./src/imagem/Group 12.svg" alt="Logo - LoyalCut">
 
-<h1 algin="center"> Barbearia - Loyal Cut </h1>
+<h1 align="center"> Barbearia - Loyal Cut </h1>
 
 <p>🚀 Projeto criado com o intuito de aprimorar competências, ao simular o funcionamento do mercado de trabalho.<br>
 Aplicando metodologias ágeis, o projeto foi segmentato em Tasks, tais como:</p>
