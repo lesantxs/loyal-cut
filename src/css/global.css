@@ -1,0 +1,59 @@
+/* variáveis */
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+body[data-tema="light"]{
+    --bg-primaria: #F4ECE2;;
+    --bg-secundaria: #75CFB8;
+    --bg-terciaria: #FFC478;
+    --bg-quarternaria: #BBDFC8;
+    --primaria: #FFF9F2;
+    --secundaria: #FFC478;
+}
+
+body[data-tema="dark"]{
+    --bg-primaria: ;
+    --bg-secundaria: ;
+    --bg-terciaria: ;
+    --primaria: ;
+    --secundaria: ;
+}
+
+
+/* body */
+
+header{
+    background-color: var(--bg-secundaria);
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-family: 'The Nautigal', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--primaria);
+}
+
+footer{
+    height: 120px;
+    width: 100%;
+    background-color: var(--bg-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape{
+    height: 30px;
+    width: 100%;
+    background-color: var(--bg-primaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
