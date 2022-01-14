@@ -15,6 +15,11 @@ main{
     padding-top: 70px;
     padding-bottom: 150px;
     opacity: 0.9;
+    height: 900px;
+}
+
+.cont{
+    width: 100%;
 }
 
 .faixa, .faixa-direita{
@@ -26,10 +31,14 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: -58px;
+    position: absolute;
     font-family: var(--fonte-padrao);
     color: var(--secundaria);
+    z-index: 1;
+}
+
+#faixa1{
+    top: 845.5px;
 }
 
 .faixa{
@@ -54,4 +63,34 @@ main{
     position: relative;
     top: -58px;
     border-radius: 20px;
+}
+
+.container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.texto-principal{
+    background-color: var(--bg-quinaria);
+    height: 200px;
+    width: 300px;
+    border-radius: 25px 60px 25px 60px;
+    box-shadow: 10px 10px 0px var(--sombra-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    margin-bottom: 200px;
+}
+
+.imagem-principal{
+    background-image: url("../imagem/imagens-home/tinta.jpeg");
+    height: 320px;
+    width: 520px;
+    border-radius: 25px 60px 25px 60px;
+    box-shadow: 10px 10px 0px var(--sombra-terciaria);
+    margin: 0 15px;
+    margin-top: 200px;
 }
