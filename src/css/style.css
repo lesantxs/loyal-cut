@@ -21,7 +21,7 @@ main{
     opacity: 0.9;
 }
 
-.container-faixa, .container-faixa-direita, .container-1{
+.container-faixa, .container-faixa-direita, .container-1, .container-2{
     width: 100%;
     display: flex;
 }
@@ -42,6 +42,10 @@ main{
 
 #faixa1{
     top: 742px;
+}
+
+#faixa2{
+    top: 1332px;
 }
 
 .faixa{
@@ -67,6 +71,10 @@ main{
 }
 
 .container-1{
+    padding-bottom: 70px;
+}
+
+.container-1, .container-2{
     align-items: center;
     justify-content: center;
     margin: 50px 0;
@@ -92,12 +100,18 @@ main{
     margin-top: 200px;
 }
 
-.container-1 .texto-principal{
+.container-1 .texto-principal, .container-1 .imagem-principal{
     border-radius: 25px 60px 25px 60px;
+}
+
+.container-1 .texto-principal, .container-2 .texto-principal{
     box-shadow: 10px 10px 0px var(--sombra-secundaria);
 }
 
-.container-1 .imagem-principal{
-    border-radius: 25px 60px 25px 60px;
+.container-1 .imagem-principal, .container-2 .imagem-principal{
     box-shadow: 10px 10px 0px var(--sombra-terciaria);
+}
+
+.container-2 .imagem-principal, .container-2 .texto-principal{
+    border-radius: 60px 25px 60px 25px;
 }
