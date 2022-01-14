@@ -109,3 +109,49 @@ body {
   border: 5px solid var(--sombra-secundaria);
   transition: none;
 }
+@media (max-width: 1000px) {
+  .formulario_de_contato {
+    width: 60%;
+  }
+}
+@media (max-width: 850px) {
+  .desenho {
+    width: 50%;
+  }
+  .formulario_de_contato {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .faixa h3 {
+    padding-left: 10px;
+  }
+  .desenho {
+    width: 70%;
+  }
+  .formulario_de_contato button {
+    width: 80px;
+  }
+  .formulario_de_contato {
+    width: 90%;
+  }
+}
+@media (max-width: 350px) {
+  .hero,
+  .sub_hero {
+    height: 300px;
+  }
+  .faixa {
+    top: 370px;
+  }
+}
+@media (max-width: 260px) {
+  .hero,
+  .sub_hero {
+    height: 200px;
+  }
+  .faixa {
+    top: 270px;
+    font-size: small;
+  }
+}
