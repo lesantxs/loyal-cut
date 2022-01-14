@@ -3,22 +3,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 body[data-tema="light"]{
-    --bg-primaria: #F4ECE2;;
+    --bg-primaria:  #F4ECE2;
     --bg-secundaria: #75CFB8;
-    --bg-terciaria: #FFC478;
+    --bg-terciaria: #FFF9F2;
     --bg-quarternaria: #BBDFC8;
+    --bg-quinaria: #FFC478;
     --primaria: #FFF9F2;
-    --secundaria: #FFC478;
+    --secundaria: #000000;
+    --sombra-primaria: #FFC478;
+    --sombra-secundaria: #EDA5C8;
+    --sombra-terciaria: #75CFB8;
+    --bg-input: #FBFBFB e #E1EEEA;
+    --botao: #BBDFC8;
+    --botao-hover: #75CFB8;
+    --botao-clique: #FFC478;
 }
 
 body[data-tema="dark"]{
-    --bg-primaria: ;
-    --bg-secundaria: ;
-    --bg-terciaria: ;
-    --primaria: ;
-    --secundaria: ;
+    --bg-primaria:  #172228;
+    --bg-secundaria: #151A1C;
+    --bg-terciaria: #212D33;
+    --bg-quarternaria: #111516;
+    --bg-quinaria: #75CFB8;
+    --primaria: #8AABA0;
+    --secundaria: #8AABA0;
+    --sombra-primaria: #8AABA0;
+    --sombra-secundaria: #151A1C;
+    --sombra-terciaria: #151A1C;
+    --bg-input: #E1EEEA;
+    --botao: #BBDFC8;
+    --botao-hover: #75CFB8;
+    --botao-clique: #FFC478;
 }
-
 
 /* body */
 
