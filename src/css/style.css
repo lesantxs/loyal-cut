@@ -1,151 +1,18 @@
 @import url("./global.css");
 
-a{
-    text-decoration: none;
-}
-
-/*header*/
-
-.cabecalho{
-    width: 100%;
-    height: 70px;
-    background-color: var(--bg-secundaria);
-    position: fixed;
-    top: 0;
-}
-
-.cabecalho, .icone-switch, .barra ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo{
-    font-family: var(--fonte-logo);
-    font-size: 50px;
-}
-
-.logo, .barra li, .icone-switch{
-    user-select: none;
-    cursor: pointer;
-    color: var(--primaria);
-}
-
-.barra{
-    margin-left: 20px;
-}
-
-.barra li{
-    padding: 0 3px;
-    text-transform: uppercase;
-    list-style: none;
-    font-family: var(--fonte-padrao);
-}
-
-.menu{
-    transition: 0.1s;
-}
-
-.menu:hover{
-    color: var(--secundaria);
-}
-
-.menu:active{
-    color: var(--primaria);
-}
-
-#switch{
-    all: unset;
-    margin-left: 10px;
-}
-
 main{
-    height: 100vh;
+    min-height: 100vh;
 }
 
-/*footer*/
-
-.rodape{
-    height: 260px;
+.container-imagem{
     background-color: var(--bg-secundaria);
-    font-family: var(--fonte-padrao);
-    color: var(--primaria);
     display: flex;
-    flex-direction: column;
-    user-select: none;
-}
-
-.infos-rodape{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding-top: 35px;
-}
-
-.container-logo{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-right: 50px;
 }
 
-.logo-rodape{
-    font-family: var(--fonte-logo);
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.logo-imagem{
-    width: 120px;
-}
-
-.titulo-rodape{
-    padding-bottom: 8px;
-    text-decoration: underline;
-}
-
-.titulo-rodape, .copyright{
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.faq{
-    padding-bottom: 3px;
-}
-
-.faq, .redes{
-    cursor: pointer;
-}
-
-.faq:hover{
-    text-decoration: underline;
-}
-
-.redes{
-    height: 34px;
-    width: 60px;
-    padding: 4px;
-}
-
-.redes:hover{
-    border: 2px solid var(--primaria);
-    border-radius: 100%;
-    padding: 2px;
-}
-
-.linha-div{
+.imagem-inicial{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-}
-
-.linha{
-    height: 2px;
-    width: 80%;
-    background-color: var(--bg-quarternaria);
-}
-
-.copyright{
-    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 214px;
+    opacity: 0.9;
 }
