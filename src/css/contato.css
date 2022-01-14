@@ -1,1 +1,20 @@
 @import url("./global.css");
+.hero {
+  margin-top: 70px;
+  background: var(--bg-secundaria);
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+.sub_hero {
+  background-color: var(--primaria);
+  width: 80%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
+}
+.desenho {
+  width: 30%;
+}
