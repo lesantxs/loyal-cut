@@ -1,15 +1,20 @@
 @import url("./global.css");
+body {
+  font-family: var(--fonte-padrao);
+}
 .hero {
   margin-top: 70px;
   background: var(--bg-secundaria);
-  height: 400px;
+  height: 458px;
   display: flex;
   justify-content: center;
+  padding-bottom: 58px;
 }
 .sub_hero {
-  background-color: var(--primaria);
+  background-color: var(--bg-terciaria);
   width: 80%;
-  height: 400px;
+  height: 458px;
+  padding-bottom: 58px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,4 +22,17 @@
 }
 .desenho {
   width: 30%;
+}
+.faixa {
+  color: var(--secundaria);
+  position: absolute;
+  top: 470px;
+  background: var(--bg-quarternaria);
+  width: 70%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 5px 25px 0px;
+  box-shadow: 0px 8px 0px var(--sombra-primaria);
 }
