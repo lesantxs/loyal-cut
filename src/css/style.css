@@ -6,39 +6,42 @@ main{
     align-items: center;
 }
 
-.container-hero-image{
+.background-hero-image{
     background-color: var(--bg-secundaria);
+    width: 100%;
 }
 
-.hero-image{
+.container-hero-image{
+    background-image: url("../imagem/imagens-home/salao.png");
     width: 100%;
-    padding-top: 70px;
-    padding-bottom: 150px;
+    height: 650px;
+    margin-bottom: 150px;
+    background-position: center;
+    background-size: cover;
     opacity: 0.9;
-    height: 900px;
 }
 
-.cont{
+.container-faixa, .container-faixa-direita, .container-1{
     width: 100%;
+    display: flex;
 }
 
 .faixa, .faixa-direita{
-    
     background: var(--bg-quarternaria);
     box-shadow: 0px 8px 0px var(--sombra-primaria);
+    font-family: var(--fonte-padrao);
+    color: var(--secundaria);
     width: 70%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    font-family: var(--fonte-padrao);
-    color: var(--secundaria);
     z-index: 1;
 }
 
 #faixa1{
-    top: 845.5px;
+    top: 742px;
 }
 
 .faixa{
@@ -46,9 +49,7 @@ main{
 }
 
 .container-faixa-direita{
-    display: flex;
     justify-content: flex-end;
-    width: 100%;
 }
 
 .faixa-direita{
@@ -66,7 +67,6 @@ main{
 }
 
 .container-1{
-    display: flex;
     align-items: center;
     justify-content: center;
     margin: 50px 0;
@@ -76,8 +76,6 @@ main{
     background-color: var(--bg-quinaria);
     height: 200px;
     width: 300px;
-    border-radius: 25px 60px 25px 60px;
-    box-shadow: 10px 10px 0px var(--sombra-secundaria);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,10 +85,19 @@ main{
 
 .imagem-principal{
     background-image: url("../imagem/imagens-home/tinta.jpeg");
+    background-size: cover;
     height: 320px;
     width: 520px;
-    border-radius: 25px 60px 25px 60px;
-    box-shadow: 10px 10px 0px var(--sombra-terciaria);
     margin: 0 15px;
     margin-top: 200px;
+}
+
+.container-1 .texto-principal{
+    border-radius: 25px 60px 25px 60px;
+    box-shadow: 10px 10px 0px var(--sombra-secundaria);
+}
+
+.container-1 .imagem-principal{
+    border-radius: 25px 60px 25px 60px;
+    box-shadow: 10px 10px 0px var(--sombra-terciaria);
 }
