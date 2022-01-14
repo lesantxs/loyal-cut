@@ -1,7 +1,9 @@
 @import url("./global.css");
 
 main{
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container-hero-image{
@@ -27,6 +29,7 @@ main{
     position: relative;
     top: -58px;
     font-family: var(--fonte-padrao);
+    color: var(--secundaria);
 }
 
 .faixa{
@@ -42,4 +45,13 @@ main{
 .faixa-direita{
     border-radius: 5px 0px 0px 25px;
     margin: 50px 0;
+}
+
+.principal{
+    min-height: 100vh;
+    background-color: var(--bg-terciaria);
+    width: 80%;
+    position: relative;
+    top: -58px;
+    border-radius: 20px;
 }

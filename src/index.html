@@ -19,11 +19,11 @@
         <ul>
           <a href=""><li class="menu">home</li></a>
           <li>&#183;</li>
-          <a href="#"><li class="menu">contato</li></a>
+          <a href="#"><li class="menu">serviços</li></a>
+          <li>&#183;</li>
+          <a href="./html/contato.html"><li class="menu">contato</li></a>
           <li>&#183;</li>
           <a href="#"><li class="menu">nossa filosofia</li></a>
-          <li>&#183;</li>
-          <a href="#"><li class="menu">serviços</li></a>
         </ul>
       </nav>
 
@@ -41,27 +41,30 @@
         <img src="./imagem/imagens-home/salao.png" alt="" class="hero-image" />
       </div>
 
-      <div>
-        <div>
-          <div class="faixa" id="faixa">
-            <h3 class="faixa-titulo">a</h3>
+
+      <!-- <div class="faixa" id="faixa1">
+          <h3 class="faixa-titulo">a</h3>
+        </div> -->
+
+        <!--<div class="container-faixa-direita">
+          <div class="faixa-direita" id="faixa2">
+            <h3 class="faixa-titulo">b</h3>
           </div>
         </div>
 
-        <div>
-          <div class="container-faixa-direita">
-            <div class="faixa-direita">
-              <h3 class="faixa-titulo">b</h3>
-            </div>
-          </div>
-        </div>
+        <div class="faixa" id="faixa3">
+          <h3 class="faixa-titulo">c</h3>
+        </div> -->
 
-        <div>
-          <div class="faixa">
-            <h3 class="faixa-titulo">c</h3>
-          </div>
+
+
+        <div class="principal">
+          <div class="container-a"></div>
+
+          <div class="container-b"></div>
+
+          <div class="container-c"></div>
         </div>
-      </div>
     </main>
 
     <footer class="rodape">
@@ -113,5 +116,18 @@
         <p>Copyright &#169; 2022 &#8212; Loyal Cut S.A</p>
       </div>
     </footer>
+
+    <script>
+      const $html = document.querySelector("html");
+      const $button = document.querySelector("#switch");
+      const $img = document.querySelector(".icone-switch");
+      const $imagemMoon = "./imagem/icones/moon.svg";
+      const $imagemSun = "./imagem/icones/sun.svg";
+
+      $button.addEventListener("click", function () {
+        $html.classList.toggle("dark-mode");
+        $img.src = $imagemSun || $imagemMoon;
+      });
+    </script>
   </body>
 </html>
