@@ -30,7 +30,7 @@
     --bg-terciaria: #212D33;
     --bg-quarternaria: #111516;
     --bg-quinaria: #75CFB8;
-    --primaria: #8AABA0;
+    --primaria: #c6ccca;
     --secundaria: #8AABA0;
     --sombra-primaria: #8AABA0;
     --sombra-secundaria: #151A1C;
@@ -55,6 +55,7 @@ a{
     background-color: var(--bg-secundaria);
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .cabecalho, .icone-switch, .barra ul{
