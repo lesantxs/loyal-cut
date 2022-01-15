@@ -21,7 +21,7 @@ main{
     opacity: 0.9;
 }
 
-.container-faixa, .container-faixa-direita, .container-1, .container-2{
+.container-faixa, .container-faixa-direita, .container-1, .container-2, .container-3{
     width: 100%;
     display: flex;
 }
@@ -40,16 +40,12 @@ main{
     z-index: 1;
 }
 
-#faixa1{
-    top: 742px;
-}
-
-#faixa2{
-    top: 1332px;
-}
-
 .faixa{
     border-radius: 0px 5px 25px 0px;
+}
+
+#faixa1{
+    top: 742px;
 }
 
 .container-faixa-direita{
@@ -61,6 +57,14 @@ main{
     margin: 50px 0;
 }
 
+#faixa2{
+    top: 1332px;
+}
+
+#faixa3{
+    top: 2020px;
+}
+
 .principal{
     min-height: 100vh;
     background-color: var(--bg-terciaria);
@@ -70,11 +74,11 @@ main{
     border-radius: 20px;
 }
 
-.container-1{
+.container-1, .container-2{
     padding-bottom: 70px;
 }
 
-.container-1, .container-2{
+.container-1, .container-2, .container-3{
     align-items: center;
     justify-content: center;
     margin: 50px 0;
@@ -92,26 +96,39 @@ main{
 }
 
 .imagem-principal{
-    background-image: url("../imagem/imagens-home/tinta.jpeg");
-    background-size: cover;
     height: 320px;
     width: 520px;
     margin: 0 15px;
     margin-top: 200px;
 }
 
-.container-1 .texto-principal, .container-1 .imagem-principal{
+.container-1 .texto-principal, .container-1 .imagem-principal, .container-3 .texto-principal, .container-3 .imagem-principal{
     border-radius: 25px 60px 25px 60px;
 }
 
-.container-1 .texto-principal, .container-2 .texto-principal{
+.container-1 .texto-principal, .container-2 .texto-principal, .container-3 .texto-principal{
     box-shadow: 10px 10px 0px var(--sombra-secundaria);
 }
 
-.container-1 .imagem-principal, .container-2 .imagem-principal{
+.container-1 .imagem-principal, .container-2 .imagem-principal, .container-3 .imagem-principal{
     box-shadow: 10px 10px 0px var(--sombra-terciaria);
 }
 
 .container-2 .imagem-principal, .container-2 .texto-principal{
     border-radius: 60px 25px 60px 25px;
+}
+
+#imagem1{
+    background-image: url("../imagem/imagens-home/tinta.jpeg");
+    background-size: cover;
+}
+
+#imagem2{
+    background-image: url("../imagem/imagens-home/cavalinho.jpeg");
+    background-size: cover;
+}
+
+#imagem3{
+    background-image: url("../imagem/imagens-home/utensilios.png");
+    background-size: cover;
 }
