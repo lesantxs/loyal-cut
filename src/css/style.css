@@ -82,6 +82,7 @@ main{
     align-items: center;
     justify-content: center;
     margin: 50px 0;
+    padding-right: 10px;
 }
 
 .texto-principal{
@@ -121,14 +122,92 @@ main{
 #imagem1{
     background-image: url("../imagem/imagens-home/tinta.jpeg");
     background-size: cover;
+    background-position: center;
 }
 
 #imagem2{
     background-image: url("../imagem/imagens-home/cavalinho.jpeg");
     background-size: cover;
+    background-position: center;
 }
 
 #imagem3{
     background-image: url("../imagem/imagens-home/utensilios.png");
     background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 750px){
+    .principal{
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px){
+    /* .cabecalho, .barra ul,  */
+    
+    .infos-rodape, .container-logo, .perguntas, .redes-sociais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .cabecalho{
+        height: auto;
+        padding: 10px 0;
+    } */
+
+    /* .barra ul{
+        margin: 10px 0;
+    } */
+    
+    .faixa, .faixa-direita{
+        width: 85%;
+    }
+
+    .principal{
+        width: 90%;
+    }
+
+    .container-1 .texto-principal, .container-1 .imagem-principal,  .container-2 .texto-principal, .container-2 .imagem-principal,  .container-3 .texto-principal, .container-3 .imagem-principal{
+        margin: 0;
+        border-radius: 25px;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .container-1 .imagem-principal, .container-2 .imagem-principal, .container-3 .imagem-principal{
+        height: 300px;
+    }
+
+    .container-1 .texto-principal, .container-2 .texto-principal, .container-3 .texto-principal{
+        height: 150px;
+    }
+
+    .container-1, .container-2, .container-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-2{
+        margin-top: 60px;
+    }
+
+    .container-3{
+        margin-top: 58px;
+    }
+
+    .rodape{
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .container-logo{
+        margin: 0;
+    }
+
+    .titulo-rodape{
+        margin-top: 15px;
+    }
 }

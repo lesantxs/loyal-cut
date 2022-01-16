@@ -38,8 +38,7 @@
 
     <main>
       <div class="background-hero-image">
-        <div class="container-hero-image">
-        </div>
+        <div class="container-hero-image"></div>
       </div>
 
       <div class="container-faixa">
@@ -49,17 +48,17 @@
       </div>
 
       <div class="container-faixa-direita">
-          <div class="faixa-direita" id="faixa2">
-            <h3 class="faixa-titulo">b</h3>
-          </div>
+        <div class="faixa-direita" id="faixa2">
+          <h3 class="faixa-titulo">b</h3>
         </div>
+      </div>
 
-        <div class="container-faixa">
-          <div class="faixa" id="faixa3">
+      <div class="container-faixa">
+        <div class="faixa" id="faixa3">
           <h3 class="faixa-titulo">c</h3>
-         </div>
         </div>
-        
+      </div>
+
 
       <div class="principal">
         <div class="container-1">
@@ -90,14 +89,14 @@
           <p class="logo-rodape">Barber Shop</p>
         </div>
 
-        <div>
+        <div class="perguntas">
           <p class="titulo-rodape">Perguntas frequentes</p>
           <p class="faq">&#183; Quem nós somos?</p>
           <p class="faq">&#183; Onde pode nos encontrar?</p>
           <p class="faq">&#183; Onde pode nos fazer uma sugestão?</p>
         </div>
 
-        <div>
+        <div class="redes-sociais">
           <p class="titulo-rodape">Nos acompanhe</p>
           <a href="https://www.linkedin.com/in/leonardo-chaves-b6544b229/"
             ><img
@@ -128,18 +127,5 @@
         <p>Copyright &#169; 2022 &#8212; Loyal Cut S.A</p>
       </div>
     </footer>
-
-    <script>
-      const $html = document.querySelector("html");
-      const $button = document.querySelector("#switch");
-      const $img = document.querySelector(".icone-switch");
-      const $imagemMoon = "./imagem/icones/moon.svg";
-      const $imagemSun = "./imagem/icones/sun.svg";
-
-      $button.addEventListener("click", function () {
-        $html.classList.toggle("dark-mode");
-        $img.src = $imagemSun || $imagemMoon;
-      });
-    </script>
   </body>
 </html>
