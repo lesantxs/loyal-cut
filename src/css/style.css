@@ -202,57 +202,17 @@ main {
   .container-3 {
     margin-top: 100px;
   }
-
-  .infos-rodape,
-  .container-logo,
-  .perguntas,
-  .redes-sociais {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .rodape {
-    height: auto;
-    padding-bottom: 30px;
-  }
-
-  .container-logo {
-    margin: 0;
-  }
-
-  .titulo-rodape {
-    margin-top: 15px;
-  }
 }
 
-@media (max-width: 630px) {
-  .cabecalho {
-    height: 270px;
-    padding: 10px 0;
+@media (max-width: 650px) {
+  #faixa1 {
+    top: 886px;
   }
-
-  .cabecalho,
-  .barra ul,
-  #switch {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  #faixa2 {
+    top: 1476px;
   }
-
-  .barra,
-  .cabecalho, #switch{
-    margin: 0;
-  }
-
-  .logo{
-      margin-left: -12px;
-  }
-
-  .barra ul {
-    margin: 10px 0;
+  #faixa3 {
+    top: 2166px;
   }
 }
 
