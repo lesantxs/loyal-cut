@@ -45,6 +45,10 @@ main {
   z-index: 1;
 }
 
+h3{
+  text-align: center;
+}
+
 .faixa {
   border-radius: 0px 5px 25px 0px;
 }
@@ -98,10 +102,16 @@ main {
   height: 200px;
   width: 300px;
   display: flex;
-  justify-content: center;
   align-items: center;
   margin: 0 15px;
   margin-bottom: 200px;
+  padding: 15px;
+  font-family: var(--fonte-padrao);
+  font-size: 18px;
+}
+
+p{
+  text-align: center;
 }
 
 .imagem-principal {
