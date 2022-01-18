@@ -54,15 +54,16 @@
               nossa equipe? Basta preencher os campos abaixo.
             </p>
             <label for="nome">Nome:</label>
-            <input type="name" id="nome" />
+            <input type="name" id="nome" required />
             <label for="email">E-mail:</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" required />
             <label for="mensagem">Mensagem:</label>
             <textarea
               name="mensagem"
               id="mensagem"
               cols="30"
               rows="10"
+              required
             ></textarea>
             <button class="enviar">Enviar</button>
           </form>
