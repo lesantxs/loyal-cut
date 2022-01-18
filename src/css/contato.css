@@ -42,7 +42,8 @@ body {
   justify-content: center;
 }
 .contato {
-  background: var(--primaria);
+  color: var(--secundaria);
+  background: var(--bg-terciaria);
   width: 80%;
   padding-bottom: 20px;
   border-radius: 0 0 20px 20px;
