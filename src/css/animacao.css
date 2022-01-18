@@ -1,0 +1,17 @@
+[data-anime] {
+    opacity: 0;
+    transition: 1.2s;
+}
+
+[data-anime="cima"] {
+    transform: translate3d(0, -30px, 0);
+}
+
+[data-anime="baixo"] {
+    transform: translate3d(0, 30px, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}

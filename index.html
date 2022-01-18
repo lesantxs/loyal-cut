@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- lembrar de colocar o reset no global -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="./imagem/icones/scissors.svg" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="icon" href="./src/imagem/icones/scissors.svg" />
     <title>Loyal Cut Barber Shop</title>
   </head>
   <body>
@@ -21,7 +20,7 @@
           <li>&#183;</li>
           <a href="#"><li class="menu">serviços</li></a>
           <li>&#183;</li>
-          <a href="./html/contato.html"><li class="menu">contato</li></a>
+          <a href="./src/html/contato.html"><li class="menu">contato</li></a>
           <li>&#183;</li>
           <a href="#"><li class="menu">nossa filosofia</li></a>
         </ul>
@@ -29,7 +28,7 @@
 
       <button id="switch">
         <img
-          src="./imagem/icones/moon.svg"
+          src="./src/imagem/icones/moon.svg"
           alt="Botão de troca de tema"
           class="icone-switch"
         />
@@ -43,37 +42,53 @@
 
       <div class="container-faixa">
         <div class="faixa" id="faixa1">
-          <h3 class="faixa-titulo">a</h3>
+          <h3 class="faixa-titulo">Qualidade garantida pela casa</h3>
         </div>
       </div>
 
       <div class="container-faixa-direita">
         <div class="faixa-direita" id="faixa2">
-          <h3 class="faixa-titulo">b</h3>
+          <h3 class="faixa-titulo">O lugar ideal e muito mais</h3>
         </div>
       </div>
 
       <div class="container-faixa">
         <div class="faixa" id="faixa3">
-          <h3 class="faixa-titulo">c</h3>
+          <h3 class="faixa-titulo">Aqui não vai faltar lugar para você</h3>
         </div>
       </div>
 
-
       <div class="principal">
         <div class="container-1">
-          <div class="texto-principal"><p>abcdefg</p></div>
-          <div class="imagem-principal" id="imagem1"></div>
+          <div class="texto-principal" data-anime="cima">
+            <p>
+              Buscamos sempre os melhores produtos, visando, princilpamente, a
+              saúde do cliente. O bom resultado é consequência do nosso cuidado.
+            </p>
+          </div>
+          <div class="imagem-principal" id="imagem1" data-anime="baixo"></div>
         </div>
 
         <div class="container-2">
-          <div class="imagem-principal" id="imagem2"></div>
-          <div class="texto-principal"><p>abcdefg</p></div>
+          <div class="imagem-principal" id="imagem2" data-anime="baixo"></div>
+          <div class="texto-principal" data-anime="cima">
+            <p>
+              Espaço todo personalizado e estilizado, mas acessível a quem
+              quiser ser cliente. Desde o começo, a Loyal Cut sempre buscou
+              deixar os clientes confortáveis.
+            </p>
+          </div>
         </div>
 
         <div class="container-3">
-          <div class="texto-principal"><p>abcdefg</p></div>
-          <div class="imagem-principal" id="imagem3"></div>
+          <div class="texto-principal" data-anime="cima">
+            <p>
+              Maquinário de ponta manuseado por pessoas qualificadas e
+              especializadas. Do liso ao afro, seu cabelo será muito bem tratada
+              aqui por profissionais preparados.
+            </p>
+          </div>
+          <div class="imagem-principal" id="imagem3" data-anime="baixo"></div>
         </div>
       </div>
     </main>
@@ -82,7 +97,7 @@
       <div class="infos-rodape">
         <div class="container-logo">
           <img
-            src="./imagem/logo.svg"
+            src="./src/imagem/logo.svg"
             alt="Logo da barbearia Loyal Cut"
             class="logo-imagem"
           />
@@ -91,28 +106,32 @@
 
         <div class="perguntas">
           <p class="titulo-rodape">Perguntas frequentes</p>
-          <p class="faq">&#183; Quem nós somos?</p>
-          <p class="faq">&#183; Onde pode nos encontrar?</p>
-          <p class="faq">&#183; Onde pode nos fazer uma sugestão?</p>
+          <p class="faq"><a href="">&#183; Quem nós somos?</a></p>
+          <p class="faq"><a href="">&#183; Onde pode nos encontrar?</a></p>
+          <p class="faq">
+            <a href="./src/html/contato.html"
+              >&#183; Onde pode nos fazer uma sugestão?</a
+            >
+          </p>
         </div>
 
         <div class="redes-sociais">
           <p class="titulo-rodape">Nos acompanhe</p>
           <a href="https://www.linkedin.com/in/leonardo-chaves-b6544b229/"
             ><img
-              src="./imagem/icones/linkedin.svg"
+              src="./src/imagem/icones/linkedin.svg"
               alt="Ícone do LinkedIn"
               class="redes"
           /></a>
           <a href="https://github.com/lesantxs/loyal-cut"
             ><img
-              src="./imagem/icones/github.svg"
+              src="./src/imagem/icones/github.svg"
               alt="Ícone do GitHub"
               class="redes"
           /></a>
           <a href="https://www.linkedin.com/in/let%C3%ADcia-santos-772358225/"
             ><img
-              src="./imagem/icones/linkedin.svg"
+              src="./src/imagem/icones/linkedin.svg"
               alt="Ícone do LinkedIn"
               class="redes"
           /></a>
@@ -133,5 +152,6 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+    <script src="./src/js/animacao.js"></script>
   </body>
 </html>

@@ -17,7 +17,7 @@
   --bg-input: #fbfbfb e #e1eeea;
   --botao: #bbdfc8;
   --botao-hover: #75cfb8;
-  --botao-clique: #ffc478;
+  --botao-clique: #eda5c8;
 
   --fonte-logo: "The Nautigal", cursive;
   --fonte-titulo: "Martel", serif;
@@ -36,9 +36,9 @@
   --sombra-secundaria: #151a1c;
   --sombra-terciaria: #151a1c;
   --bg-input: #e1eeea;
-  --botao: #bbdfc8;
-  --botao-hover: #75cfb8;
-  --botao-clique: #ffc478;
+  --botao: #75cfb8;
+  --botao-hover: #8aaba0;
+  --botao-clique: #212d33;
 }
 
 /*header*/
@@ -230,6 +230,10 @@ main {
 
 .faq:hover {
   text-decoration: underline;
+}
+
+.faq a:visited{
+    color: var(--primaria);
 }
 
 .redes {
