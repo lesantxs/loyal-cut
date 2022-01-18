@@ -1,0 +1,21 @@
+@keyframes eixoY {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes eixoX {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
