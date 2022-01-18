@@ -171,6 +171,10 @@ main {
   text-decoration: underline;
 }
 
+.faq a:visited{
+    color: var(--primaria);
+}
+
 .redes {
   height: 34px;
   width: 60px;
