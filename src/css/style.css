@@ -1,4 +1,5 @@
 @import url("./global.css");
+@import url("./animacao.css");
 
 main {
   display: flex;
@@ -108,6 +109,9 @@ h3{
   padding: 15px;
   font-family: var(--fonte-padrao);
   font-size: 18px;
+  opacity: 0;
+  animation: eixoY normal 1s both;
+  transform: translateY(-30px);
 }
 
 .texto-principal p{
@@ -119,6 +123,10 @@ h3{
   width: 520px;
   margin: 0 15px;
   margin-top: 200px;
+  opacity: 0;
+  animation: eixoY normal 1s both;
+  transform: translateY(30px);
+  
 }
 
 .container-1 .texto-principal,
