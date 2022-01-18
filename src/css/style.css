@@ -216,18 +216,6 @@ h3{
   }
 }
 
-@media (max-width: 650px) {
-  #faixa1 {
-    top: 886px;
-  }
-  #faixa2 {
-    top: 1476px;
-  }
-  #faixa3 {
-    top: 2166px;
-  }
-}
-
 @media (max-width: 450px) {
   .container-1 .texto-principal,
   .container-1 .imagem-principal,
