@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/contato.css" />
-    <link rel="icon" href="./imagem/icones/scissors.svg" />
+    <link rel="icon" href="../imagem/icones/scissors.svg" />
     <title>Loyal Cut Barber Shop</title>
   </head>
   <body>
@@ -14,8 +14,17 @@
       <h1 class="logo">Loyal Cut</h1>
 
       <nav class="barra">
-        <ul>
-          <a href="../index.html"><li class="menu">home</li></a>
+        <button
+          id="btn_mobile"
+          aria-label="Abrir menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span id="hamburguer"></span>
+        </button>
+        <ul id="nav" role="menu">
+          <a href="../../index.html"><li class="menu">home</li></a>
           <li>&#183;</li>
           <a href="#"><li class="menu">serviços</li></a>
           <li>&#183;</li>
@@ -54,15 +63,16 @@
               nossa equipe? Basta preencher os campos abaixo.
             </p>
             <label for="nome">Nome:</label>
-            <input type="name" id="nome" />
+            <input type="name" id="nome" required />
             <label for="email">E-mail:</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" required />
             <label for="mensagem">Mensagem:</label>
             <textarea
               name="mensagem"
               id="mensagem"
               cols="30"
               rows="10"
+              required
             ></textarea>
             <button class="enviar">Enviar</button>
           </form>
@@ -78,7 +88,7 @@
       <div class="infos-rodape">
         <div class="container-logo">
           <img
-            src="./imagem/logo.svg"
+            src="../imagem/logo.svg"
             alt="Logo da barbearia Loyal Cut"
             class="logo-imagem"
           />
@@ -123,5 +133,6 @@
         <p>Copyright &#169; 2022 &#8212; Loyal Cut S.A</p>
       </div>
     </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>
