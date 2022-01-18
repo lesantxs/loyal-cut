@@ -41,10 +41,6 @@
   --botao-clique: #212d33;
 }
 
-a {
-  text-decoration: none;
-}
-
 /*header*/
 
 .cabecalho {
@@ -104,7 +100,72 @@ a {
   all: unset;
   margin-left: 10px;
 }
+#btn_mobile {
+  display: none;
+}
 
+@media (max-width: 650px) {
+  #btn_mobile {
+    display: block;
+  }
+  #nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background-color: var(--bg-secundaria);
+    height: 0px;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .barra.active #nav {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #nav a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+  }
+  #btn_mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  #hamburguer {
+    color: var(--primaria);
+    display: block;
+    border-top: 2px solid var(--primaria);
+    width: 20px;
+  }
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: currentColor;
+    position: relative;
+  }
+  .barra.active #hamburguer {
+    border-top-color: transparent;
+  }
+  .barra.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  .barra.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
 /*main*/
 
 main {
@@ -226,35 +287,5 @@ main {
 
   .titulo-rodape {
     margin-top: 15px;
-  }
-}
-
-@media (max-width: 650px) {
-  .cabecalho {
-    height: auto;
-    padding: 10px 0;
-    position: initial;
-  }
-
-  /* .cabecalho,
-    #switch {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    } */
-
-  .barra,
-  .cabecalho,
-  #switch {
-    margin: 0;
-  }
-
-  .logo {
-    margin-left: -12px;
-  }
-
-  .barra ul {
-    margin: 10px 0;
   }
 }
