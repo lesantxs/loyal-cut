@@ -100,7 +100,6 @@
   all: unset;
   margin-left: 10px;
 }
-
 #btn_mobile {
   display: none;
 }
@@ -109,7 +108,6 @@
   #btn_mobile {
     display: block;
   }
-
   #nav {
     display: flex;
     flex-direction: column;
@@ -125,18 +123,15 @@
     visibility: hidden;
     overflow-y: hidden;
   }
-
   .barra.active #nav {
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
   }
-
   #nav a {
     padding: 1rem 0;
     margin: 0 1rem;
   }
-
   #btn_mobile {
     display: flex;
     padding: 0.5rem 1rem;
@@ -144,14 +139,12 @@
     background: none;
     cursor: pointer;
   }
-
   #hamburguer {
     color: var(--primaria);
     display: block;
     border-top: 2px solid var(--primaria);
     width: 20px;
   }
-
   #hamburguer::after,
   #hamburguer::before {
     content: "";
@@ -162,15 +155,12 @@
     background-color: currentColor;
     position: relative;
   }
-
   .barra.active #hamburguer {
     border-top-color: transparent;
   }
-
   .barra.active #hamburguer::before {
     transform: rotate(135deg);
   }
-
   .barra.active #hamburguer::after {
     transform: rotate(-135deg);
     top: -7px;
@@ -229,7 +219,7 @@ main {
   font-size: 18px;
 }
 
-.faq{
+.faq {
   padding-bottom: 3px;
 }
 
@@ -242,9 +232,9 @@ main {
   text-decoration: underline;
 }
 
-
-.faq a, .faq a:visited{
-    color: var(--primaria);
+.faq a,
+.faq a:visited {
+  color: var(--primaria);
 }
 
 .redes {

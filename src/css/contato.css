@@ -55,7 +55,7 @@ body {
 .formulario_de_contato {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+  margin-top: 80px;
   width: 60%;
 }
 .formulario_de_contato p {
@@ -84,7 +84,8 @@ body {
   width: 40%;
   align-self: center;
   margin-top: 30px;
-  margin-bottom: 100px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
   font-weight: bold;
   padding: 20px 15px;
   border: 5px solid var(--botao);
@@ -116,6 +117,9 @@ body {
   }
 }
 @media (max-width: 850px) {
+  .faixa {
+    width: 85%;
+  }
   .desenho {
     width: 50%;
   }
@@ -124,6 +128,10 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .contato,
+  .sub_hero {
+    width: 90%;
+  }
   .faixa h3 {
     padding-left: 10px;
   }
@@ -143,7 +151,7 @@ body {
     height: 300px;
   }
   .faixa {
-    top: 370px;
+    top: 312px;
   }
 }
 @media (max-width: 260px) {
