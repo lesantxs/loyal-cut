@@ -3,6 +3,7 @@ class Controller {
     const model = new Model();
     model.mudarTema();
     const view = new View();
-    view.trocarIcone();
+    view.trocarIconesHeaderFooter();
+    view.trocarIconesContato();
   }
 }
