@@ -267,6 +267,10 @@ main {
 }
 
 @media (max-width: 850px) {
+  .menu{
+    font-size: 20px;
+  }
+  
   .infos-rodape,
   .container-logo,
   .perguntas,
