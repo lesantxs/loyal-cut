@@ -15,3 +15,26 @@
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 0.9;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -10px;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

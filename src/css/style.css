@@ -1,7 +1,7 @@
 @import url("./global.css");
 @import url("./animacao.css");
 
-main {
+main, .container-hero-image{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,12 +14,26 @@ main {
 
 .container-hero-image {
   background-image: url("../imagem/imagens-home/salao.png");
-  width: 100%;
-  height: 650px;
+  height: 630px;
   margin-bottom: 150px;
   background-position: center;
   background-size: cover;
-  opacity: 0.9;
+  opacity: 0;
+  animation: aparecer normal 1.5s both;
+  justify-content: center;
+}
+
+.hero-texto {
+  font-size: 90px;
+  z-index: 1;
+  color: var(--primaria);
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: var(--fonte-logo);
+  background-color: var(--bg-secundaria);
+  opacity: 0;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
 }
 
 .container-faixa,
@@ -46,7 +60,7 @@ main {
   z-index: 1;
 }
 
-h3{
+h3 {
   text-align: center;
 }
 
@@ -55,7 +69,7 @@ h3{
 }
 
 #faixa1 {
-  top: 742px;
+  top: 722px;
 }
 
 .container-faixa-direita {
@@ -68,11 +82,11 @@ h3{
 }
 
 #faixa2 {
-  top: 1332px;
+  top: 1312px;
 }
 
 #faixa3 {
-  top: 2020px;
+  top: 2000px;
 }
 
 .principal {
@@ -120,7 +134,7 @@ h3{
   width: 520px;
   margin: 0 15px;
   margin-top: 200px;
-  
+
 }
 
 .container-1 .texto-principal,
@@ -243,19 +257,4 @@ h3{
   .container-3 {
     margin-top: 130px;
   }
-}
-
-
-[data-anime] {
-  opacity: 0;
-  transform: 0.6s;
-}
-
-[data-anime="cima"] {
-  transform: translate3d(0, -30px, 0);
-}
-
-[data-anime].animate{
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px);
 }
