@@ -232,8 +232,9 @@ main {
   text-decoration: underline;
 }
 
-.faq a:visited{
-    color: var(--primaria);
+.faq a,
+.faq a:visited {
+  color: var(--primaria);
 }
 
 .redes {
