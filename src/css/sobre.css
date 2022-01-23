@@ -1,2 +1,37 @@
 @import url("./global.css");
 @import url("./animacao.css");
+
+main, .container-hero-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .background-hero-image {
+    background-color: var(--bg-secundaria);
+    width: 100%;
+  }
+  
+  .container-hero-image {
+    background-image: url("../imagem/imagens-sobre/salao.png");
+    height: 630px;
+    margin-bottom: 150px;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    animation: aparecer normal 1.5s both;
+    justify-content: center;
+  }
+  
+  .hero-texto {
+    font-size: 90px;
+    z-index: 1;
+    color: var(--primaria);
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-family: var(--fonte-logo);
+    background-color: var(--bg-secundaria);
+    opacity: 0;
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
+  }
