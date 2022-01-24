@@ -50,30 +50,30 @@ class View {
       );
     }
   }
-  trocarIconesContato() {
+  trocarDesenhos() {
     const dark = html.classList.contains("dark-mode");
-    const iconeContato1 = document.querySelector("#iconeContato1");
-    const srcIconeContato1 = iconeContato1.getAttribute("src");
-    const iconeContato2 = document.querySelector("#iconeContato2");
-    const srcIconeContato2 = iconeContato2.getAttribute("src");
+    const desenho1 = document.querySelector("#desenho1");
+    const srcdesenho1 = desenho1.getAttribute("src");
+    const desenho2 = document.querySelector("#desenho2");
+    const srcdesenho2 = desenho2.getAttribute("src");
 
     if (dark) {
-      iconeContato1.setAttribute(
+      desenho1.setAttribute(
         "src",
-        srcIconeContato1.replace("IconeCorte1", "IconeCorte1dark")
+        srcdesenho1.replace("IconeCorte1", "IconeCorte1dark")
       );
-      iconeContato2.setAttribute(
+      desenho2.setAttribute(
         "src",
-        srcIconeContato2.replace("IconeCorte2", "IconeCorte2dark")
+        srcdesenho2.replace("IconeCorte2", "IconeCorte2dark")
       );
     } else {
-      iconeContato1.setAttribute(
+      desenho1.setAttribute(
         "src",
-        srcIconeContato1.replace("IconeCorte1dark", "IconeCorte1")
+        srcdesenho1.replace("IconeCorte1dark", "IconeCorte1")
       );
-      iconeContato2.setAttribute(
+      desenho2.setAttribute(
         "src",
-        srcIconeContato2.replace("IconeCorte2dark", "IconeCorte2")
+        srcdesenho2.replace("IconeCorte2dark", "IconeCorte2")
       );
     }
   }
