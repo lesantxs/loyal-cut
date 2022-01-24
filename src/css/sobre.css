@@ -2,7 +2,8 @@
 @import url("./animacao.css");
 
 main,
-.container-hero-image {
+.container-hero-image,
+.principal {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,12 +38,17 @@ main,
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
 }
 
-.container-faixa, .principal {
+.container-faixa,
+.container-faixa-direita,
+.container-1,
+.container-2,
+.irmaos  {
   width: 100%;
   display: flex;
 }
 
-.faixa {
+.faixa,
+.faixa-direita {
   background: var(--bg-quarternaria);
   box-shadow: 0px 8px 0px var(--sombra-primaria);
   font-family: var(--fonte-padrao);
@@ -54,28 +60,85 @@ main,
   justify-content: center;
   position: absolute;
   z-index: 1;
-  border-radius: 0px 5px 25px 0px;
 }
 
 #faixa1 {
   top: 722px;
+  border-radius: 0px 5px 25px 0px;
+}
+
+.container-faixa-direita {
+  justify-content: flex-end;
+}
+
+#faixa2 {
+  top: 1250px;
+  border-radius: 5px 0px 0px 25px;
 }
 
 .principal {
-  min-height: 100vh;
+  min-height: auto;
   background-color: var(--bg-terciaria);
   width: 80%;
   position: relative;
   top: -58px;
   border-radius: 20px;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-1,
+.container-2 {
+  font-family: var(--fonte-padrao);
+  font-size: 17px;
+  color: var(--secundaria);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-1 {
-  margin: 150px 0;
-  padding-right: 10px;
-  width: 61%;
-  font-family: var(--fonte-padrao);
-  text-align: center;
-  font-size: 17px;
+  padding: 60px 0;
+  min-height: 90vh;
+}
+
+.container-2 {
+  margin: 80px 0;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-1 p,
+.container-2 p{
+ width: 61%;
+}
+
+.irmaos{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.irmao-um,
+.irmao-dois {
+  border-radius: 60px 60px 25px 25px;
+  border: 8px solid var(--sombra-terciaria);
+  background-size: contain;
+  background-position: center;
+  width: 40%;
+  height: 500px;
+  margin: 70px 35px;
+}
+
+.irmao-um:hover,
+.irmao-dois:hover {
+ border: 8px solid var(--sombra-secundaria);
+}
+
+.irmao-um {
+  background: url("../imagem/imagens-sobre/pessoa1.jpeg");
+}
+
+.irmao-dois {
+  background: url("../imagem/imagens-sobre/pessoa2.jpeg");
 }
