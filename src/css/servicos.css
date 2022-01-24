@@ -1,12 +1,10 @@
 @import url("./global.css");
 body {
+  font-family: var(--fonte-padrao);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-}
-body {
-  font-family: var(--fonte-padrao);
 }
 .hero {
   margin-top: 70px;
@@ -41,4 +39,59 @@ body {
   align-items: center;
   border-radius: 0px 5px 25px 0px;
   box-shadow: 0px 8px 0px var(--sombra-primaria);
+}
+.servicos_ {
+  background-color: var(--bg-primaria);
+  display: flex;
+  justify-content: center;
+}
+.servicos {
+  width: 80%;
+  height: 1000px;
+  background-color: var(--bg-terciaria);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+}
+.servico1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: var(--bg-secundaria);
+  border-radius: 60px 25px;
+  margin: 30px;
+}
+.servico2 {
+  grid-column: 2/2;
+  grid-row: 1/2;
+  background-color: var(--bg-secundaria);
+  border-radius: 25px 60px;
+  margin: 30px;
+}
+.servico3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: var(--bg-secundaria);
+  border-radius: 25px 60px 60px 25px;
+  margin: 30px;
+}
+.servico4 {
+  grid-column: 2/2;
+  grid-row: 2/3;
+  background-color: var(--bg-secundaria);
+  border-radius: 60px 25px 25px 60px;
+  margin: 30px;
+}
+.servico5 {
+  grid-column: 1/2;
+  grid-row: 3/3;
+  background-color: var(--bg-secundaria);
+  border-radius: 25px 60px;
+  margin: 30px;
+}
+.servico6 {
+  grid-column: 2/2;
+  grid-row: 3/3;
+  background-color: var(--bg-secundaria);
+  border-radius: 60px 25px;
+  margin: 30px;
 }
