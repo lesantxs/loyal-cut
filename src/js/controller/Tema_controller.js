@@ -4,6 +4,8 @@ class Controller {
     model.mudarTema();
     const view = new View();
     view.trocarIconesHeaderFooter();
-    view.trocarIconesContato();
+    if (window.location.href.indexOf("contato") > 0) {
+      view.trocarIconesContato();
+    }
   }
 }
