@@ -11,10 +11,6 @@ class View {
     const srcIconeLinkedIn1 = iconeLinkedIn1.getAttribute("src");
     const iconeLinkedIn2 = document.querySelector(".iconeLinkedIn2");
     const srcIconeLinkedIn2 = iconeLinkedIn2.getAttribute("src");
-    // const iconeContato1 = document.querySelector("#iconeContato1");
-    // const srcIconeContato1 = iconeContato1.getAttribute("src");
-    // const iconeContato2 = document.querySelector("#iconeContato2");
-    // const srcIconeContato2 = iconeContato2.getAttribute("src");
 
     if (dark) {
       iconeTema.setAttribute("src", srcIconeTema.replace("moon", "sun"));
@@ -34,14 +30,6 @@ class View {
         "src",
         srcIconeLinkedIn2.replace("linkedin", "linkedin-dark-mode")
       );
-      // iconeContato1.setAttribute(
-      //   "src",
-      //   srcIconeContato1.replace("IconeCorte1", "IconeCorte1dark")
-      // );
-      // iconeContato2.setAttribute(
-      //   "src",
-      //   srcIconeContato2.replace("IconeCorte2", "IconeCorte2dark")
-      // );
     } else {
       iconeTema.setAttribute("src", srcIconeTema.replace("sun", "moon"));
       logoRodape.setAttribute(
@@ -60,14 +48,6 @@ class View {
         "src",
         srcIconeLinkedIn2.replace("linkedin-dark-mode", "linkedin")
       );
-      // iconeContato1.setAttribute(
-      //   "src",
-      //   srcIconeContato1.replace("IconeCorte1dark", "IconeCorte1")
-      // );
-      // iconeContato2.setAttribute(
-      //   "src",
-      //   srcIconeContato2.replace("IconeCorte2dark", "IconeCorte2")
-      // );
     }
   }
   trocarIconesContato() {
