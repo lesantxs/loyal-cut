@@ -121,6 +121,8 @@ body {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   padding-top: 100px;
+  padding-bottom: 20px;
+  border-radius: 0 0 20px 20px;
 }
 .produto1 {
   grid-column: 1/2;
@@ -149,4 +151,21 @@ body {
   background-color: var(--bg-secundaria);
   border-radius: 60px 25px;
   margin: 30px;
+}
+.imagem_final {
+  background: var(--bg-primaria);
+  height: 458px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 58px;
+}
+.sub_imagem_final {
+  background-color: var(--bg-primaria);
+  width: 80%;
+  height: 458px;
+  padding-bottom: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 20px 20px;
 }
