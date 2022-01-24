@@ -95,3 +95,17 @@ body {
   border-radius: 60px 25px;
   margin: 30px;
 }
+.faixa_produtos {
+  color: var(--secundaria);
+  position: absolute;
+  top: 1527px;
+  right: 0px;
+  background: var(--bg-quarternaria);
+  width: 70%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0px 0px 25px;
+  box-shadow: 0px 8px 0px var(--sombra-primaria);
+}
