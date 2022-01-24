@@ -5,3 +5,27 @@ body {
   justify-content: space-between;
   height: 100vh;
 }
+body {
+  font-family: var(--fonte-padrao);
+}
+.hero {
+  margin-top: 70px;
+  background: var(--bg-secundaria);
+  height: 458px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 58px;
+}
+.sub_hero {
+  background-color: var(--bg-terciaria);
+  width: 80%;
+  height: 458px;
+  padding-bottom: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
+}
+.desenho {
+  width: 30%;
+}
