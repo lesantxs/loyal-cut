@@ -42,7 +42,8 @@ main,
 .container-faixa-direita,
 .container-1,
 .container-2,
-.irmaos  {
+.irmaos,
+.container-3{
   width: 100%;
   display: flex;
 }
@@ -104,7 +105,7 @@ main,
 }
 
 .container-2 {
-  margin: 80px 0;
+  margin-top: 80px;
   flex-direction: column;
   min-height: 100vh;
 }
@@ -126,8 +127,8 @@ main,
   background-size: contain;
   background-position: center;
   width: 40%;
-  height: 500px;
-  margin: 70px 35px;
+  height: 550px;
+  margin: 80px 35px;
 }
 
 .irmao-um:hover,
@@ -141,4 +142,14 @@ main,
 
 .irmao-dois {
   background: url("../imagem/imagens-sobre/pessoa2.jpeg");
+}
+
+.container-3{
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.container-3 img{
+ width: 80px;
+ margin: 0 20px;
 }
