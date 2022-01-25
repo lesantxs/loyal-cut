@@ -38,6 +38,7 @@ body {
   align-items: center;
   border-radius: 0px 5px 25px 0px;
   box-shadow: 0px 8px 0px var(--sombra-primaria);
+  z-index: 1;
 }
 .servicos_ {
   background-color: var(--bg-primaria);
