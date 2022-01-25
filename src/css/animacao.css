@@ -11,6 +11,11 @@
     transform: translate3d(0, 30px, 0);
 }
 
+[data-anime="baixo-dois"] {
+    transform: translate3d(0, 100px, 0);
+    transition: 1.8s;
+}
+
 [data-anime].animate{
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
