@@ -39,17 +39,15 @@ main,
 }
 
 .container-faixa,
-.container-faixa-direita,
 .container-1,
 .container-2,
 .irmaos,
-.container-3{
+.container-3 {
   width: 100%;
   display: flex;
 }
 
-.faixa,
-.faixa-direita {
+.faixa {
   background: var(--bg-quarternaria);
   box-shadow: 0px 8px 0px var(--sombra-primaria);
   font-family: var(--fonte-padrao);
@@ -66,15 +64,6 @@ main,
 #faixa1 {
   top: 722px;
   border-radius: 0px 5px 25px 0px;
-}
-
-.container-faixa-direita {
-  justify-content: flex-end;
-}
-
-#faixa2 {
-  top: 1250px;
-  border-radius: 5px 0px 0px 25px;
 }
 
 .principal {
@@ -100,22 +89,21 @@ main,
 }
 
 .container-1 {
-  padding: 60px 0;
-  min-height: 90vh;
+  /* padding: 60px 0; */
+  margin-top: 140px;
 }
 
 .container-2 {
-  margin-top: 80px;
+  margin: 80px 0;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .container-1 p,
-.container-2 p{
- width: 61%;
+.container-2 p {
+  width: 61%;
 }
 
-.irmaos{
+.irmaos {
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -124,32 +112,94 @@ main,
 .irmao-dois {
   border-radius: 60px 60px 25px 25px;
   border: 8px solid var(--sombra-terciaria);
-  background-size: contain;
-  background-position: center;
   width: 40%;
   height: 550px;
-  margin: 80px 35px;
+  margin: 30px 35px;
 }
 
 .irmao-um:hover,
 .irmao-dois:hover {
- border: 8px solid var(--sombra-secundaria);
+  border: 8px solid var(--sombra-secundaria);
 }
 
 .irmao-um {
   background: url("../imagem/imagens-sobre/pessoa1.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .irmao-dois {
   background: url("../imagem/imagens-sobre/pessoa2.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
-.container-3{
+.container-3 {
   justify-content: center;
   margin-bottom: 80px;
 }
 
-.container-3 img{
- width: 80px;
- margin: 0 20px;
+.container-3 img {
+  width: 80px;
+  margin: 0 20px;
+}
+
+@media (max-width: 1000px) {
+  .principal {
+    padding: 0;
+  }
+
+  .container-1 p,
+  .container-2 p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 875px) {
+  .faixa{
+    width: 85%;
+  }
+  
+  .principal {
+    padding: 0;
+    width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  .container-1 {
+    margin-top: 100px;
+  }
+
+  .container-2 {
+    margin-top: 50px;
+  }
+
+  .irmao-um,
+  .irmao-dois {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-texto {
+    font-size: 70px;
+  }
+
+  .irmao-um,
+  .irmao-dois {
+    margin: 20px 0;
+    width: 90%;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-texto {
+    font-size: 60px;
+  }
+
+  .container-3 img {
+    width: 50px;
+    margin: 0 15px;
+  }
 }
