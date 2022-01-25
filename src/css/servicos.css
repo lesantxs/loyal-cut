@@ -56,42 +56,48 @@ body {
 .servico1 {
   grid-column: 1/2;
   grid-row: 1/2;
-  background-color: var(--bg-secundaria);
+  border: solid 15px var(--bg-secundaria);
+  background-image: url(../imagem/imagens-home/cadeira.jpeg);
   border-radius: 60px 25px;
   margin: 30px;
 }
 .servico2 {
   grid-column: 2/2;
   grid-row: 1/2;
-  background-color: var(--bg-secundaria);
+  border: solid 15px var(--bg-secundaria);
+  background-image: url(../imagem/imagens-home/cavalinho.jpeg);
   border-radius: 25px 60px;
   margin: 30px;
 }
 .servico3 {
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: var(--bg-secundaria);
+  border: solid 15px var(--bg-secundaria);
+  background-image: url(../imagem/imagens-home/salao.png);
   border-radius: 25px 60px 60px 25px;
   margin: 30px;
 }
 .servico4 {
   grid-column: 2/2;
   grid-row: 2/3;
-  background-color: var(--bg-secundaria);
+  border: solid 15px var(--bg-secundaria);
+  background-image: url(../imagem/imagens-home/tinta.jpeg);
   border-radius: 60px 25px 25px 60px;
   margin: 30px;
 }
 .servico5 {
   grid-column: 1/2;
   grid-row: 3/3;
-  background-color: var(--bg-secundaria);
+  border: solid 15px var(--bg-secundaria);
+  background-image: url(../imagem/imagens-home/utensilios.png);
   border-radius: 25px 60px;
   margin: 30px;
 }
 .servico6 {
   grid-column: 2/2;
   grid-row: 3/3;
-  background-color: var(--bg-secundaria);
+  border: solid 15px var(--bg-secundaria);
+  background-image: url(../imagem/imagens-home/cadeira.jpeg);
   border-radius: 60px 25px;
   margin: 30px;
 }
@@ -129,28 +135,32 @@ body {
 .produto1 {
   grid-column: 1/2;
   grid-row: 1/2;
-  background-color: var(--bg-secundaria);
+  border: solid 15px var(--bg-secundaria);
+  background-image: url(../imagem/imagens-home/cavalinho.jpeg);
   border-radius: 60px 25px;
   margin: 30px;
 }
 .produto2 {
   grid-column: 2/2;
   grid-row: 1/2;
-  background-color: var(--bg-secundaria);
+  border: solid 15px var(--bg-secundaria);
+  background-image: url(../imagem/imagens-home/salao.png);
   border-radius: 25px 60px;
   margin: 30px;
 }
 .produto3 {
   grid-column: 1/2;
   grid-row: 2/2;
-  background-color: var(--bg-secundaria);
+  border: solid 15px var(--bg-secundaria);
+  background-image: url(../imagem/imagens-home/tinta.jpeg);
   border-radius: 25px 60px;
   margin: 30px;
 }
 .produto4 {
   grid-column: 2/2;
   grid-row: 2/2;
-  background-color: var(--bg-secundaria);
+  border: solid 15px var(--bg-secundaria);
+  background-image: url(../imagem/imagens-home/utensilios.png);
   border-radius: 60px 25px;
   margin: 30px;
 }
