@@ -40,6 +40,10 @@ body {
   box-shadow: 0px 8px 0px var(--sombra-primaria);
   z-index: 1;
 }
+.servicos p,
+.produtos p {
+  color: var(--secundaria);
+}
 .servicos_ {
   background-color: var(--bg-primaria);
   display: flex;
