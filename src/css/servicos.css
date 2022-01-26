@@ -120,7 +120,7 @@ body {
   border: solid 15px var(--bg-secundaria);
   background-image: url(../imagem/imagens_servicos/CorteEstilizado.jpg);
   background-size: cover;
-  background-position-y: -130px;
+  background-position-y: -50px;
   border-radius: 25px 60px 60px 25px;
   margin: 30px;
   display: flex;
@@ -301,7 +301,6 @@ body {
   border: solid 15px var(--bg-secundaria);
   background-image: url(../imagem/imagens_servicos/Sabonete.jpeg);
   background-size: cover;
-  background-position: center;
   background-position-y: -50px;
   border-radius: 25px 60px;
   margin: 30px;
@@ -363,7 +362,6 @@ body {
   background-image: url(../imagem/imagens_servicos/TintaParaCabelo.jpg);
   background-size: cover;
   background-position: center;
-  background-position-y: -300px;
   border-radius: 60px 25px;
   margin: 30px;
   display: flex;
