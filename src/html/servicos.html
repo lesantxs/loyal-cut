@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/contato.css" />
+    <link rel="stylesheet" href="../css/servicos.css" />
+    <link rel="stylesheet" href="../css/servicos_mobile.css">
+    <link rel="stylesheet" href="../css/animacoes_servicos.css">
     <link rel="icon" href="../imagem/icones/scissors.svg" />
-    <title>Contato – Loyal Cut</title>
+    <title>Loyal Cut Barber Shop</title>
   </head>
   <body>
     <header class="cabecalho">
@@ -28,16 +30,15 @@
           <li>&#183;</li>
           <a href="#"><li class="menu">serviços</li></a>
           <li>&#183;</li>
-          <a><li class="menu">contato</li></a>
+          <a href="./contato.html"><li class="menu">contato</li></a>
           <li>&#183;</li>
-          <a href="./sobre.html"><li class="menu">nossa filosofia</li></a>
+          <a href="#"><li class="menu">nossa filosofia</li></a>
           <li>&#183;</li>
           <a href="#"><li class="menu">login</li></a>
           <li>&#183;</li>
           <a href="#"><li class="menu">cadastro</li></a>
         </ul>
       </nav>
-
       <button id="switch">
         <img
           src="../imagem/icones/moon.svg"
@@ -51,42 +52,44 @@
         <div class="sub_hero">
           <img
             class="desenho"
-            id="desenho1"
-            src="../imagem/imagens_contato/IconeCorte1.svg"
+            id="desenho2"
+            src="../imagem/imagens_servicos/IconeCorte2.svg"
             alt="Desenho cabeleireiro cortando cabelo de cliente"
           />
         </div>
       </section>
-      <div class="faixa">
-        <h3>Compartilhe algo conosco</h3>
+      <div class="faixa_servicos">
+        <h3>Veja aqui nossos serviços</h3>
       </div>
-      <section class="principal">
-        <div class="contato">
-          <form class="formulario_de_contato">
-            <p>
-              Você tem alguma dúvida, está interessado em trabalhar com a
-              nossa equipe, quer fazer uma sugestão ou só compartilhar a sua emoção? Basta preencher os campos abaixo.
-            </p>
-            <label for="nome">Nome:</label>
-            <input type="name" id="nome" required />
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" required />
-            <label for="mensagem">Mensagem:</label>
-            <textarea
-              name="mensagem"
-              id="mensagem"
-              cols="30"
-              rows="10"
-              required
-            ></textarea>
-            <button class="enviar">Enviar</button>
-          </form>
+      <section class="servicos_">
+        <div class="servicos">
+          <div class="servico1 slide-br animate"><p class="descri_s1">Corte simples</p></div>
+          <div class="servico2 slide-bl animate"><p class="descri_s2">Corte de barba</p></div>
+          <div class="servico3 slide-rigth animate"><p class="descri_s3">Corte estilizado</p></div>
+          <div class="servico4 slide-left animate"><p class="descri_s4">Escova e progressiva</p></div>
+          <div class="servico5 slide-tr animate"><p class="descri_s5">Tintura</p></div>
+          <div class="servico6 slide-tl animate"><p class="descri_s6">Combos especiais</p></div>
+        </div>
+      </section>
+      <div class="faixa_produtos">
+        <h3>Veja aqui nossos produtos</h3>
+      </div>
+      <section class="produtos_">
+        <div class="produtos">
+          <div class="produto1 slide-br animate"><p class="descri_p1">Creme para barbear</p></div>
+          <div class="produto2 slide-bl animate"><p class="descri_p2">Sabonete hidratente</p></div>
+          <div class="produto3 slide-tr animate"><p class="descri_p3">Shampoo e condicionador</p></div>
+          <div class="produto4 slide-tl animate"><p class="descri_p4">Tintas para cabelo</p></div>
+        </div>
+      </section>
+      <section class="imagem_final">
+        <div class="sub_imagem_final">
           <img
-            class="desenho"
-            id="desenho2"
-            src="../imagem/imagens_contato/IconeCorte2.svg"
-            alt="Desenho cabeleireiro cortando cabelo de cliente"
-          />
+              class="desenho"
+              id="desenho1"
+              src="../imagem/imagens_servicos/IconeCorte1.svg"
+              alt="Desenho cabeleireiro cortando cabelo de cliente"
+            />
         </div>
       </section>
     </main>
@@ -143,6 +146,7 @@
     <script src="../js/model/Tema_model.js"></script>
     <script src="../js/view/Tema_view.js"></script>
     <script src="../js/menuHamburguer.js"></script>
+    <script src="../js/animacoes_servicos.js"></script>
     <script src="../js/Tema_main.js"></script>
   </body>
 </html>

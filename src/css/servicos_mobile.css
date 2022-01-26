@@ -1,0 +1,91 @@
+@media (max-width: 1100px) {
+  .produto2 {
+    background-position-y: 0px;
+  }
+}
+@media (max-width: 950px) {
+  .sub_hero,
+  .servicos,
+  .produtos {
+    width: 90%;
+  }
+  .faixa_produtos,
+  .faixa_servicos {
+    width: 85%;
+  }
+}
+@media (max-width: 850px) {
+  .desenho {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .desenho {
+    width: 70%;
+  }
+}
+@media (max-width: 650px) {
+  .servicos {
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  }
+  .servico1 {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    height: 300px;
+  }
+  .servico2 {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    height: 300px;
+  }
+  .servico3 {
+    grid-column: 1/1;
+    grid-row: 3/4;
+    height: 300px;
+  }
+  .servico4 {
+    grid-column: 1/1;
+    grid-row: 4/5;
+    height: 300px;
+  }
+  .servico5 {
+    grid-column: 1/1;
+    grid-row: 5/6;
+    height: 300px;
+  }
+  .servico6 {
+    grid-column: 1/1;
+    grid-row: 6/6;
+    height: 300px;
+  }
+  .faixa_produtos {
+    top: 2725px;
+  }
+  .produtos {
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+  }
+  .produto1 {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    height: 300px;
+  }
+  .produto2 {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    height: 300px;
+  }
+  .produto3 {
+    grid-column: 1/1;
+    grid-row: 3/4;
+    height: 300px;
+  }
+  .produto4 {
+    grid-column: 1/1;
+    grid-row: 4/5;
+    height: 300px;
+  }
+}
